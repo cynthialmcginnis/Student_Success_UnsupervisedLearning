@@ -1,3 +1,6 @@
+
+![Students](https://github.com/user-attachments/assets/db558314-6238-4dcc-9eaa-1fa39cec8b01)
+
 # Student Success — Unsupervised Learning (Personas via NMF + K-Means)
 
 Early, **non-stigmatizing** insight into student patterns using **unsupervised learning only**.  
@@ -5,7 +8,7 @@ We discover **personas** from academics, engagement, and behavior features with 
 
 ---
 
-## 📌 Problem
+##  Problem
 Identify a small number of **interpretable student personas** to support advising conversations:
 - What patterns exist across GPA, credits, attendance, study/online hours, late submissions?
 - How do personas differ (means/medians, key factor themes)?
@@ -13,7 +16,7 @@ Identify a small number of **interpretable student personas** to support advisin
 
 ---
 
-## 🔧 Methods (course-aligned)
+##  Methods (course-aligned)
 - **Preprocessing:** `ColumnTransformer` = MinMax scale numerics + One-Hot encode categoricals (non-negative for NMF).
 - **Matrix Factorization:** **NMF(r=12)** → student factor scores `W` and feature loadings `H`.
 - **Clustering:** **K-Means** on `W`, model selection by **silhouette** → **k=2** (moderate separation).
@@ -21,14 +24,14 @@ Identify a small number of **interpretable student personas** to support advisin
 
 ---
 
-## 🧪 Data
+##  Data
 - ~1,000 students × 23 columns (no missing in this snapshot).
 - Excluded from training: identifiers and protected attributes (Gender, Ethnicity, SES, Disability, Parental Education).  
 - Labels, if present (e.g., `Dropout_Risk`), are **context only**.
 
 ---
 
-## 📊 Key Result — Persona Spotlight
+##  Key Result — Persona Spotlight
 
 > Radial chart shows **persona means relative to cohort average (1.0)** on select metrics  
 > (higher = above cohort mean, lower = below; Late subs is inverted so **lower is better**).
