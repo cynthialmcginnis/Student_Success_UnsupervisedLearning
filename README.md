@@ -43,5 +43,9 @@ Identify a small number of **interpretable student personas** to support advisin
 > Silhouette ≈ **0.23** → **soft segments** with overlap; treat personas as **support prompts**, not labels.
 
 ---
+GitHub-based Colab badge 
+If you later commit the notebook to this repo, add this badge too:
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/cynthialmcginnis/Student_Success_UnsupervisedLearning/blob/main/notebooks/student_personas.ipynb)
 
 
